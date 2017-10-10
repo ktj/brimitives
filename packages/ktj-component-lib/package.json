@@ -13,9 +13,10 @@
     "es-lint": "eslint ."
   },
   "dependencies": {
-    "react": "^15.5.x",
-    "react-dom": "^15.5.x",
-    "react-primitives": "ktj/primitives-build",
+    "react": "^16.0.0",
+    "react-brimitives": "^0.4.5",
+    "react-dom": "^16.0.0",
+    "styled-brimitives": "^0.0.2",
     "styled-components": "^2.2.1"
   },
   "devDependencies": {

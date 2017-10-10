@@ -1,10 +1,11 @@
 import React from 'react';
-import styled from 'styled-components/primitives';
+import styled from 'styled-brimitives';
+import { View } from 'react-brimitives';
 
-const View = styled.View``;
+const SView = styled(View)``;
 
 const Main = styled(props => (
-  <View accessibilityRole="main" {...props} />
+  <SView accessibilityRole="main" {...props} />
 ))``;
 
 export default Main;

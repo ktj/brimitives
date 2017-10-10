@@ -1,5 +1,7 @@
 {
   "expo": {
-    "sdkVersion": "21.0.0"
-  }
+    "sdkVersion": "15.0.0"
+  },
+  "name": "native",
+  "displayName": "native"
 }

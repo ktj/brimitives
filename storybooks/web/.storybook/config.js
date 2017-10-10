@@ -1,7 +1,7 @@
 /* eslint-disable import/no-extraneous-dependencies, import/no-unresolved, import/extensions */
-
-import { configure } from '@storybook/react';
-import { ThemeProvider } from 'styled-components/primitives';
+import React from 'react';
+import { configure, addDecorator } from '@storybook/react';
+import { ThemeProvider } from 'styled-brimitives';
 import { Theme } from 'ktj-component-lib';
 
 const req = require.context('../stories', true, /\.stories\.js$/);
