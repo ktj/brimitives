@@ -1,29 +1,40 @@
 {
   "name": "native",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "private": true,
   "devDependencies": {
-    "babel-preset-react-native-stage-0": "^1.0.1",
-    "jest-expo": "^0.3.0",
-    "react-test-renderer": "^15.4.0",
-    "@storybook/react-native": "^3.2.12",
     "@storybook/addon-actions": "^3.2.12",
     "@storybook/addon-links": "^3.2.12",
-    "react-dom": "^15.4.0",
-    "prop-types": "^15.6.0"
+    "@storybook/react-native": "^3.2.12",
+    "babel-preset-react-native-stage-0": "^1.0.1",
+    "jest-expo": "^21.0.2",
+    "prop-types": "^15.6.0",
+    "react-dom": "^16.0.0",
+    "react-test-renderer": "^16.0.0"
   },
   "scripts": {
     "start": "react-native start",
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "test": "node node_modules/jest/bin/jest.js --watch",
-    "storybook": "storybook start -p 7007"
+    "storybook": "storybook start -p 7007",
+    "prestorybook": "rnstl"
   },
   "jest": {
     "preset": "jest-expo"
   },
   "dependencies": {
-    "react": "^15.4.0",
-    "react-native": "^0.42.x"
+    "react": "^16.0.0",
+    "react-native": "^0.48.4",
+    "react-native-storybook-loader": "^1.6.0"
+  },
+  "config": {
+    "react-native-storybook-loader": {
+      "searchDir": [
+        "./stories"
+      ],
+      "pattern": "**/*.stories.js",
+      "outputFile": "./storybook/storyLoader.js"
+    }
   }
 }
