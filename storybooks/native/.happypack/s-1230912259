@@ -1,0 +1,20 @@
+
+
+
+
+
+
+
+
+
+
+
+'use strict';
+
+var DeviceInfo=require('NativeModules').DeviceInfo;
+
+var invariant=require('fbjs/lib/invariant');
+
+invariant(DeviceInfo,'DeviceInfo native module is not installed correctly');
+
+module.exports=DeviceInfo;;var _temp=function(){if(typeof __REACT_HOT_LOADER__==='undefined'){return;}__REACT_HOT_LOADER__.register(DeviceInfo,'DeviceInfo','/home/phz/workspace/brimitives/storybooks/native/node_modules/react-native/Libraries/Utilities/DeviceInfo.js');}();;

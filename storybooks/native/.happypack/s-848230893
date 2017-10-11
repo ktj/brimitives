@@ -1,0 +1,67 @@
+
+
+
+
+
+
+
+
+
+
+
+
+'use strict';
+
+
+
+
+function defineLazyObjectProperty(
+object,
+name,
+descriptor)
+
+
+
+
+{var
+get=descriptor.get;
+var enumerable=descriptor.enumerable!==false;
+var writable=descriptor.writable!==false;
+
+var value=void 0;
+var valueSet=false;
+function getValue(){
+
+
+
+if(!valueSet){
+
+
+
+
+
+valueSet=true;
+setValue(get());
+}
+return value;
+}
+function setValue(newValue){
+value=newValue;
+valueSet=true;
+Object.defineProperty(object,name,{
+value:newValue,
+configurable:true,
+enumerable:enumerable,
+writable:writable});
+
+}
+
+Object.defineProperty(object,name,{
+get:getValue,
+set:setValue,
+configurable:true,
+enumerable:enumerable});
+
+}
+
+module.exports=defineLazyObjectProperty;;var _temp=function(){if(typeof __REACT_HOT_LOADER__==='undefined'){return;}__REACT_HOT_LOADER__.register(defineLazyObjectProperty,'defineLazyObjectProperty','/home/phz/workspace/brimitives/storybooks/native/node_modules/react-native/Libraries/Utilities/defineLazyObjectProperty.js');}();;

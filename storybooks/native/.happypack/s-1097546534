@@ -1,0 +1,40 @@
+
+
+
+
+
+
+
+
+
+
+
+'use strict';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var assets=[];
+
+function registerAsset(asset){
+
+
+return assets.push(asset);
+}
+
+function getAssetByID(assetId){
+return assets[assetId-1];
+}
+
+module.exports={registerAsset:registerAsset,getAssetByID:getAssetByID};;var _temp=function(){if(typeof __REACT_HOT_LOADER__==='undefined'){return;}__REACT_HOT_LOADER__.register(assets,'assets','/home/phz/workspace/brimitives/storybooks/native/node_modules/react-native/Libraries/Image/AssetRegistry.js');__REACT_HOT_LOADER__.register(registerAsset,'registerAsset','/home/phz/workspace/brimitives/storybooks/native/node_modules/react-native/Libraries/Image/AssetRegistry.js');__REACT_HOT_LOADER__.register(getAssetByID,'getAssetByID','/home/phz/workspace/brimitives/storybooks/native/node_modules/react-native/Libraries/Image/AssetRegistry.js');}();;

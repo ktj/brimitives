@@ -1,0 +1,36 @@
+
+
+
+
+
+
+
+
+
+
+
+'use strict';
+
+var SamplingProfiler={
+poke:function poke(token){
+var error=null;
+var result=null;
+try{
+result=global.pokeSamplingProfiler();
+if(result===null){
+console.log('The JSC Sampling Profiler has started');
+}else{
+console.log('The JSC Sampling Profiler has stopped');
+}
+}catch(e){
+console.log(
+'Error occured when restarting Sampling Profiler: '+e.toString());
+error=e.toString();
+}var _require=
+
+require('NativeModules'),JSCSamplingProfiler=_require.JSCSamplingProfiler;
+JSCSamplingProfiler.operationComplete(token,result,error);
+}};
+
+
+module.exports=SamplingProfiler;;var _temp=function(){if(typeof __REACT_HOT_LOADER__==='undefined'){return;}__REACT_HOT_LOADER__.register(SamplingProfiler,'SamplingProfiler','/home/phz/workspace/brimitives/storybooks/native/node_modules/react-native/Libraries/Performance/SamplingProfiler.js');}();;

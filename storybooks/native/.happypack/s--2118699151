@@ -1,0 +1,23 @@
+
+
+
+
+
+
+
+
+
+
+
+
+'use strict';var _require=
+
+
+
+require('ReactNative'),__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED=_require.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;var
+
+
+
+NativeMethodsMixin=__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.NativeMethodsMixin;
+
+module.exports=NativeMethodsMixin;;var _temp=function(){if(typeof __REACT_HOT_LOADER__==='undefined'){return;}__REACT_HOT_LOADER__.register(NativeMethodsMixin,'NativeMethodsMixin','/home/phz/workspace/brimitives/storybooks/native/node_modules/react-native/Libraries/Renderer/shims/NativeMethodsMixin.js');}();;

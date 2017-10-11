@@ -1,0 +1,23 @@
+
+
+
+
+
+
+
+
+
+
+
+'use strict';
+
+var PropTypes=require('prop-types');
+
+var createStrictShapeTypeChecker=require('createStrictShapeTypeChecker');
+
+var PointPropType=createStrictShapeTypeChecker({
+x:PropTypes.number,
+y:PropTypes.number});
+
+
+module.exports=PointPropType;;var _temp=function(){if(typeof __REACT_HOT_LOADER__==='undefined'){return;}__REACT_HOT_LOADER__.register(PointPropType,'PointPropType','/home/phz/workspace/brimitives/storybooks/native/node_modules/react-native/Libraries/StyleSheet/PointPropType.js');}();;

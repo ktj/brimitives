@@ -1,0 +1,25 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+'use strict';
+
+
+
+
+
+
+function guid(){
+return'f'+(Math.random()*(1<<30)).toString(16).replace('.','');
+}
+
+module.exports=guid;;var _temp=function(){if(typeof __REACT_HOT_LOADER__==='undefined'){return;}__REACT_HOT_LOADER__.register(guid,'guid','/home/phz/workspace/brimitives/storybooks/native/node_modules/react-native/Libraries/vendor/core/guid.js');}();;

@@ -1,0 +1,38 @@
+
+
+
+
+
+
+
+
+
+
+
+
+'use strict';
+
+var NativeModules=require('NativeModules');
+
+var Platform={
+OS:'ios',
+get Version(){
+var constants=NativeModules.PlatformConstants;
+return constants&&constants.osVersion;
+},
+get isPad(){
+var constants=NativeModules.PlatformConstants;
+return constants?constants.interfaceIdiom==='pad':false;
+},
+get isTVOS(){
+var constants=NativeModules.PlatformConstants;
+return constants?constants.interfaceIdiom==='tv':false;
+},
+get isTesting(){
+var constants=NativeModules.PlatformConstants;
+return constants&&constants.isTesting;
+},
+select:function select(obj){return'ios'in obj?obj.ios:obj.default;}};
+
+
+module.exports=Platform;;var _temp=function(){if(typeof __REACT_HOT_LOADER__==='undefined'){return;}__REACT_HOT_LOADER__.register(Platform,'Platform','/home/phz/workspace/brimitives/storybooks/native/node_modules/react-native/Libraries/Utilities/Platform.ios.js');}();;

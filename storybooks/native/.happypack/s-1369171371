@@ -1,0 +1,167 @@
+
+
+
+
+
+
+
+
+
+
+
+'use strict';
+
+var NativeModules=require('NativeModules');
+var Promise=require('Promise');
+var RCTDeviceEventEmitter=require('RCTDeviceEventEmitter');
+
+var AccessibilityManager=NativeModules.AccessibilityManager;
+
+var VOICE_OVER_EVENT='voiceOverDidChange';
+var ANNOUNCEMENT_DID_FINISH_EVENT='announcementDidFinish';
+
+
+
+
+
+
+var _subscriptions=new Map();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var AccessibilityInfo={
+
+
+
+
+
+
+fetch:function fetch(){
+return new Promise(function(resolve,reject){
+AccessibilityManager.getCurrentVoiceOverState(
+resolve,
+reject);
+
+});
+},
+
+
+
+
+
+
+
+
+
+
+
+
+
+addEventListener:function addEventListener(
+eventName,
+handler)
+{
+var listener;
+
+if(eventName==='change'){
+listener=RCTDeviceEventEmitter.addListener(
+VOICE_OVER_EVENT,
+handler);
+
+}else if(eventName==='announcementFinished'){
+listener=RCTDeviceEventEmitter.addListener(
+ANNOUNCEMENT_DID_FINISH_EVENT,
+handler);
+
+}
+
+_subscriptions.set(handler,listener);
+return{
+remove:AccessibilityInfo.removeEventListener.bind(null,eventName,handler)};
+
+},
+
+
+
+
+setAccessibilityFocus:function setAccessibilityFocus(
+reactTag)
+{
+AccessibilityManager.setAccessibilityFocus(reactTag);
+},
+
+
+
+
+announceForAccessibility:function announceForAccessibility(
+announcement)
+{
+AccessibilityManager.announceForAccessibility(announcement);
+},
+
+
+
+
+removeEventListener:function removeEventListener(
+eventName,
+handler)
+{
+var listener=_subscriptions.get(handler);
+if(!listener){
+return;
+}
+listener.remove();
+_subscriptions.delete(handler);
+}};
+
+
+
+module.exports=AccessibilityInfo;;var _temp=function(){if(typeof __REACT_HOT_LOADER__==='undefined'){return;}__REACT_HOT_LOADER__.register(AccessibilityManager,'AccessibilityManager','/home/phz/workspace/brimitives/storybooks/native/node_modules/react-native/Libraries/Components/AccessibilityInfo/AccessibilityInfo.ios.js');__REACT_HOT_LOADER__.register(VOICE_OVER_EVENT,'VOICE_OVER_EVENT','/home/phz/workspace/brimitives/storybooks/native/node_modules/react-native/Libraries/Components/AccessibilityInfo/AccessibilityInfo.ios.js');__REACT_HOT_LOADER__.register(ANNOUNCEMENT_DID_FINISH_EVENT,'ANNOUNCEMENT_DID_FINISH_EVENT','/home/phz/workspace/brimitives/storybooks/native/node_modules/react-native/Libraries/Components/AccessibilityInfo/AccessibilityInfo.ios.js');__REACT_HOT_LOADER__.register(_subscriptions,'_subscriptions','/home/phz/workspace/brimitives/storybooks/native/node_modules/react-native/Libraries/Components/AccessibilityInfo/AccessibilityInfo.ios.js');__REACT_HOT_LOADER__.register(AccessibilityInfo,'AccessibilityInfo','/home/phz/workspace/brimitives/storybooks/native/node_modules/react-native/Libraries/Components/AccessibilityInfo/AccessibilityInfo.ios.js');}();;

@@ -1,0 +1,30 @@
+
+
+
+
+
+
+
+
+
+
+
+'use strict';
+
+
+
+
+
+
+var dummyPoint={x:undefined,y:undefined};
+
+var pointsDiffer=function pointsDiffer(one,two){
+one=one||dummyPoint;
+two=two||dummyPoint;
+return one!==two&&(
+one.x!==two.x||
+one.y!==two.y);
+
+};
+
+module.exports=pointsDiffer;;var _temp=function(){if(typeof __REACT_HOT_LOADER__==='undefined'){return;}__REACT_HOT_LOADER__.register(dummyPoint,'dummyPoint','/home/phz/workspace/brimitives/storybooks/native/node_modules/react-native/Libraries/Utilities/differ/pointsDiffer.js');__REACT_HOT_LOADER__.register(pointsDiffer,'pointsDiffer','/home/phz/workspace/brimitives/storybooks/native/node_modules/react-native/Libraries/Utilities/differ/pointsDiffer.js');}();;

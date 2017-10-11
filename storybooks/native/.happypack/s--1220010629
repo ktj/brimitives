@@ -1,0 +1,7 @@
+'use strict';
+
+var ESCAPED_CHARACTERS=/(\\|\"|\')/g;
+
+module.exports=function printString(val){
+return val.replace(ESCAPED_CHARACTERS,'\\$1');
+};;var _temp=function(){if(typeof __REACT_HOT_LOADER__==='undefined'){return;}__REACT_HOT_LOADER__.register(ESCAPED_CHARACTERS,'ESCAPED_CHARACTERS','/home/phz/workspace/brimitives/storybooks/native/node_modules/react-native/node_modules/pretty-format/printString.js');}();;

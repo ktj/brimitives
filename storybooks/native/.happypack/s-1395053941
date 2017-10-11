@@ -1,0 +1,40 @@
+
+
+
+
+
+
+
+
+
+
+
+'use strict';var _require=
+
+require('NativeModules'),SourceCode=_require.SourceCode;
+
+var _cachedDevServerURL=void 0;
+var FALLBACK='http://localhost:8081/';
+
+
+
+
+
+
+
+
+
+
+function getDevServer(){
+if(_cachedDevServerURL===undefined){
+var match=SourceCode.scriptURL&&SourceCode.scriptURL.match(/^https?:\/\/.*?\//);
+_cachedDevServerURL=match?match[0]:null;
+}
+
+return{
+url:_cachedDevServerURL||FALLBACK,
+bundleLoadedFromServer:_cachedDevServerURL!==null};
+
+}
+
+module.exports=getDevServer;;var _temp=function(){if(typeof __REACT_HOT_LOADER__==='undefined'){return;}__REACT_HOT_LOADER__.register(_cachedDevServerURL,'_cachedDevServerURL','/home/phz/workspace/brimitives/storybooks/native/node_modules/react-native/Libraries/Core/Devtools/getDevServer.js');__REACT_HOT_LOADER__.register(FALLBACK,'FALLBACK','/home/phz/workspace/brimitives/storybooks/native/node_modules/react-native/Libraries/Core/Devtools/getDevServer.js');__REACT_HOT_LOADER__.register(getDevServer,'getDevServer','/home/phz/workspace/brimitives/storybooks/native/node_modules/react-native/Libraries/Core/Devtools/getDevServer.js');}();;

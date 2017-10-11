@@ -1,0 +1,26 @@
+
+
+
+
+
+
+
+
+
+
+
+'use strict';
+
+
+
+
+
+
+
+var I18nManager=require('NativeModules').I18nManager||{
+isRTL:false,
+allowRTL:function allowRTL(){},
+forceRTL:function forceRTL(){}};
+
+
+module.exports=I18nManager;;var _temp=function(){if(typeof __REACT_HOT_LOADER__==='undefined'){return;}__REACT_HOT_LOADER__.register(I18nManager,'I18nManager','/home/phz/workspace/brimitives/storybooks/native/node_modules/react-native/Libraries/ReactNative/I18nManager.js');}();;

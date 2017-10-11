@@ -1,0 +1,19 @@
+'use strict';
+
+Object.defineProperty(exports,"__esModule",{
+value:true});
+
+exports.chromeLight=exports.chromeDark=undefined;
+
+var _chromeDark2=require('./chromeDark');
+
+var _chromeDark3=_interopRequireDefault(_chromeDark2);
+
+var _chromeLight2=require('./chromeLight');
+
+var _chromeLight3=_interopRequireDefault(_chromeLight2);
+
+function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+exports.chromeDark=_chromeDark3.default;
+exports.chromeLight=_chromeLight3.default;;var _temp=function(){if(typeof __REACT_HOT_LOADER__==='undefined'){return;}__REACT_HOT_LOADER__.register(_chromeDark3,'_chromeDark3','/home/phz/workspace/brimitives/storybooks/native/node_modules/react-inspector/lib/styles/themes/index.js');__REACT_HOT_LOADER__.register(_chromeLight3,'_chromeLight3','/home/phz/workspace/brimitives/storybooks/native/node_modules/react-inspector/lib/styles/themes/index.js');__REACT_HOT_LOADER__.register(_interopRequireDefault,'_interopRequireDefault','/home/phz/workspace/brimitives/storybooks/native/node_modules/react-inspector/lib/styles/themes/index.js');}();;

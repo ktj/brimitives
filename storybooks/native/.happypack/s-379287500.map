@@ -1,0 +1,1 @@
+{"version":3,"sources":["stories/ScrollView/index.js"],"names":[],"mappings":"yDAAA,yC","file":"index.js","sourceRoot":"/home/phz/workspace/brimitives/storybooks/native","sourcesContent":["import { ScrollView } from 'react-native';\n\nexport default ScrollView;\n"]}

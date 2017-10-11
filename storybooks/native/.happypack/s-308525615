@@ -1,0 +1,38 @@
+
+
+
+
+
+
+
+
+
+
+
+'use strict';
+
+var PooledClass=require('PooledClass');
+
+var twoArgumentPooler=PooledClass.twoArgumentPooler;
+
+
+
+
+
+
+
+
+
+function Position(left,top){
+this.left=left;
+this.top=top;
+}
+
+Position.prototype.destructor=function(){
+this.left=null;
+this.top=null;
+};
+
+PooledClass.addPoolingTo(Position,twoArgumentPooler);
+
+module.exports=Position;;var _temp=function(){if(typeof __REACT_HOT_LOADER__==='undefined'){return;}__REACT_HOT_LOADER__.register(twoArgumentPooler,'twoArgumentPooler','/home/phz/workspace/brimitives/storybooks/native/node_modules/react-native/Libraries/Components/Touchable/Position.js');__REACT_HOT_LOADER__.register(Position,'Position','/home/phz/workspace/brimitives/storybooks/native/node_modules/react-native/Libraries/Components/Touchable/Position.js');}();;

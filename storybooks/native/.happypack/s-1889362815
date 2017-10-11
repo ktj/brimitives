@@ -1,0 +1,60 @@
+
+
+
+
+
+
+
+
+
+
+
+'use strict';
+
+var RCTToastAndroid=require('NativeModules').ToastAndroid;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var ToastAndroid={
+
+
+SHORT:RCTToastAndroid.SHORT,
+LONG:RCTToastAndroid.LONG,
+
+
+TOP:RCTToastAndroid.TOP,
+BOTTOM:RCTToastAndroid.BOTTOM,
+CENTER:RCTToastAndroid.CENTER,
+
+show:function show(
+message,
+duration)
+{
+RCTToastAndroid.show(message,duration);
+},
+
+showWithGravity:function showWithGravity(
+message,
+duration,
+gravity)
+{
+RCTToastAndroid.showWithGravity(message,duration,gravity);
+}};
+
+
+module.exports=ToastAndroid;;var _temp=function(){if(typeof __REACT_HOT_LOADER__==='undefined'){return;}__REACT_HOT_LOADER__.register(RCTToastAndroid,'RCTToastAndroid','/home/phz/workspace/brimitives/storybooks/native/node_modules/react-native/Libraries/Components/ToastAndroid/ToastAndroid.android.js');__REACT_HOT_LOADER__.register(ToastAndroid,'ToastAndroid','/home/phz/workspace/brimitives/storybooks/native/node_modules/react-native/Libraries/Components/ToastAndroid/ToastAndroid.android.js');}();;

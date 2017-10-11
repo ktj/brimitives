@@ -1,0 +1,59 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"use strict";
+
+var mergeHelpers=require('mergeHelpers');
+
+var checkMergeObjectArg=mergeHelpers.checkMergeObjectArg;
+var checkMergeIntoObjectArg=mergeHelpers.checkMergeIntoObjectArg;
+
+
+
+
+
+
+
+function mergeInto(one,two){
+checkMergeIntoObjectArg(one);
+if(two!=null){
+checkMergeObjectArg(two);
+for(var key in two){
+if(!two.hasOwnProperty(key)){
+continue;
+}
+one[key]=two[key];
+}
+}
+}
+
+module.exports=mergeInto;;var _temp=function(){if(typeof __REACT_HOT_LOADER__==='undefined'){return;}__REACT_HOT_LOADER__.register(checkMergeObjectArg,"checkMergeObjectArg","/home/phz/workspace/brimitives/storybooks/native/node_modules/react-native/Libraries/vendor/core/mergeInto.js");__REACT_HOT_LOADER__.register(checkMergeIntoObjectArg,"checkMergeIntoObjectArg","/home/phz/workspace/brimitives/storybooks/native/node_modules/react-native/Libraries/vendor/core/mergeInto.js");__REACT_HOT_LOADER__.register(mergeInto,"mergeInto","/home/phz/workspace/brimitives/storybooks/native/node_modules/react-native/Libraries/vendor/core/mergeInto.js");}();;

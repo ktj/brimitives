@@ -1,0 +1,66 @@
+
+
+
+
+
+
+
+
+
+
+
+'use strict';
+
+var NativeModules=require('NativeModules');
+var RCTDeviceEventEmitter=require('RCTDeviceEventEmitter');
+
+var RCTAccessibilityInfo=NativeModules.AccessibilityInfo;
+
+var TOUCH_EXPLORATION_EVENT='touchExplorationDidChange';
+
+
+
+
+
+var _subscriptions=new Map();
+
+var AccessibilityInfo={
+
+fetch:function fetch(){
+return new Promise(function(resolve,reject){
+RCTAccessibilityInfo.isTouchExplorationEnabled(
+function(resp){
+resolve(resp);
+});
+
+});
+},
+
+addEventListener:function addEventListener(
+eventName,
+handler)
+{
+var listener=RCTDeviceEventEmitter.addListener(
+TOUCH_EXPLORATION_EVENT,
+function(enabled){
+handler(enabled);
+});
+
+_subscriptions.set(handler,listener);
+},
+
+removeEventListener:function removeEventListener(
+eventName,
+handler)
+{
+var listener=_subscriptions.get(handler);
+if(!listener){
+return;
+}
+listener.remove();
+_subscriptions.delete(handler);
+}};
+
+
+
+module.exports=AccessibilityInfo;;var _temp=function(){if(typeof __REACT_HOT_LOADER__==='undefined'){return;}__REACT_HOT_LOADER__.register(RCTAccessibilityInfo,'RCTAccessibilityInfo','/home/phz/workspace/brimitives/storybooks/native/node_modules/react-native/Libraries/Components/AccessibilityInfo/AccessibilityInfo.android.js');__REACT_HOT_LOADER__.register(TOUCH_EXPLORATION_EVENT,'TOUCH_EXPLORATION_EVENT','/home/phz/workspace/brimitives/storybooks/native/node_modules/react-native/Libraries/Components/AccessibilityInfo/AccessibilityInfo.android.js');__REACT_HOT_LOADER__.register(_subscriptions,'_subscriptions','/home/phz/workspace/brimitives/storybooks/native/node_modules/react-native/Libraries/Components/AccessibilityInfo/AccessibilityInfo.android.js');__REACT_HOT_LOADER__.register(AccessibilityInfo,'AccessibilityInfo','/home/phz/workspace/brimitives/storybooks/native/node_modules/react-native/Libraries/Components/AccessibilityInfo/AccessibilityInfo.android.js');}();;

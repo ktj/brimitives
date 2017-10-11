@@ -1,0 +1,36 @@
+'use strict';
+
+Object.defineProperty(exports,"__esModule",{
+value:true});
+
+
+var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};
+
+var _jsxFileName='src/Main/Main.js';
+
+var _templateObject=_taggedTemplateLiteral([''],['']);
+
+var _react=require('react');
+
+var _react2=_interopRequireDefault(_react);
+
+var _styledBrimitives=require('styled-brimitives');
+
+var _styledBrimitives2=_interopRequireDefault(_styledBrimitives);
+
+function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+function _taggedTemplateLiteral(strings,raw){return Object.freeze(Object.defineProperties(strings,{raw:{value:Object.freeze(raw)}}));}
+
+var View=_styledBrimitives2.default.View(_templateObject);
+
+var Main=(0,_styledBrimitives2.default)(function(props){
+return _react2.default.createElement(View,_extends({accessibilityRole:'main'},props,{
+__source:{
+fileName:_jsxFileName,
+lineNumber:7}}));
+
+
+})(_templateObject);
+
+exports.default=Main;;var _temp=function(){if(typeof __REACT_HOT_LOADER__==='undefined'){return;}__REACT_HOT_LOADER__.register(_extends,'_extends','/home/phz/workspace/brimitives/packages/ktj-component-lib/lib/Main/Main.js');__REACT_HOT_LOADER__.register(_jsxFileName,'_jsxFileName','/home/phz/workspace/brimitives/packages/ktj-component-lib/lib/Main/Main.js');__REACT_HOT_LOADER__.register(_templateObject,'_templateObject','/home/phz/workspace/brimitives/packages/ktj-component-lib/lib/Main/Main.js');__REACT_HOT_LOADER__.register(_react2,'_react2','/home/phz/workspace/brimitives/packages/ktj-component-lib/lib/Main/Main.js');__REACT_HOT_LOADER__.register(_styledBrimitives2,'_styledBrimitives2','/home/phz/workspace/brimitives/packages/ktj-component-lib/lib/Main/Main.js');__REACT_HOT_LOADER__.register(_interopRequireDefault,'_interopRequireDefault','/home/phz/workspace/brimitives/packages/ktj-component-lib/lib/Main/Main.js');__REACT_HOT_LOADER__.register(_taggedTemplateLiteral,'_taggedTemplateLiteral','/home/phz/workspace/brimitives/packages/ktj-component-lib/lib/Main/Main.js');__REACT_HOT_LOADER__.register(View,'View','/home/phz/workspace/brimitives/packages/ktj-component-lib/lib/Main/Main.js');__REACT_HOT_LOADER__.register(Main,'Main','/home/phz/workspace/brimitives/packages/ktj-component-lib/lib/Main/Main.js');}();;

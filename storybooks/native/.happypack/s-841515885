@@ -1,0 +1,22 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+global.importScripts=
+global.importScripts||
+function(importPath){return(
+fetch(importPath).then(function(response){return response.text();}).then(function(body){
+
+eval(body);
+}));};;var _temp=function(){if(typeof __REACT_HOT_LOADER__==='undefined'){return;}}();;

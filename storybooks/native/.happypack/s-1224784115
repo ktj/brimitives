@@ -1,0 +1,19 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+'use strict';
+
+require('whatwg-fetch');
+
+module.exports={fetch:fetch,Headers:Headers,Request:Request,Response:Response};;var _temp=function(){if(typeof __REACT_HOT_LOADER__==='undefined'){return;}}();;

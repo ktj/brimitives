@@ -1,0 +1,19 @@
+
+
+
+
+
+
+
+
+
+
+
+
+'use strict';
+
+var ReactNativeFeatureFlags={
+useFiber:false};
+
+
+module.exports=ReactNativeFeatureFlags;;var _temp=function(){if(typeof __REACT_HOT_LOADER__==='undefined'){return;}__REACT_HOT_LOADER__.register(ReactNativeFeatureFlags,'ReactNativeFeatureFlags','/home/phz/workspace/brimitives/storybooks/native/node_modules/react-native/Libraries/Renderer/shims/ReactNativeFeatureFlags.js');}();;

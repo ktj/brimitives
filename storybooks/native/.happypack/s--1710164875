@@ -1,0 +1,13 @@
+'use strict';
+
+Object.defineProperty(exports,"__esModule",{
+value:true});
+
+exports.default={
+WebkitTouchCallout:'none',
+WebkitUserSelect:'none',
+KhtmlUserSelect:'none',
+MozUserSelect:'none',
+msUserSelect:'none',
+OUserSelect:'none',
+userSelect:'none'};;var _temp=function(){if(typeof __REACT_HOT_LOADER__==='undefined'){return;}}();;

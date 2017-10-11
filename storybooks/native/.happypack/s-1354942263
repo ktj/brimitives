@@ -1,0 +1,42 @@
+
+
+
+
+
+
+
+
+
+
+
+'use strict';
+
+
+
+
+
+
+
+
+var dummyInsets={
+top:undefined,
+left:undefined,
+right:undefined,
+bottom:undefined};
+
+
+var insetsDiffer=function insetsDiffer(
+one,
+two)
+{
+one=one||dummyInsets;
+two=two||dummyInsets;
+return one!==two&&(
+one.top!==two.top||
+one.left!==two.left||
+one.right!==two.right||
+one.bottom!==two.bottom);
+
+};
+
+module.exports=insetsDiffer;;var _temp=function(){if(typeof __REACT_HOT_LOADER__==='undefined'){return;}__REACT_HOT_LOADER__.register(dummyInsets,'dummyInsets','/home/phz/workspace/brimitives/storybooks/native/node_modules/react-native/Libraries/Utilities/differ/insetsDiffer.js');__REACT_HOT_LOADER__.register(insetsDiffer,'insetsDiffer','/home/phz/workspace/brimitives/storybooks/native/node_modules/react-native/Libraries/Utilities/differ/insetsDiffer.js');}();;

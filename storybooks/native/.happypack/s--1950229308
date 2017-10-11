@@ -1,0 +1,22 @@
+
+
+
+
+
+
+
+
+
+
+'use strict';
+
+function processDecelerationRate(decelerationRate){
+if(decelerationRate==='normal'){
+decelerationRate=0.998;
+}else if(decelerationRate==='fast'){
+decelerationRate=0.99;
+}
+return decelerationRate;
+}
+
+module.exports=processDecelerationRate;;var _temp=function(){if(typeof __REACT_HOT_LOADER__==='undefined'){return;}__REACT_HOT_LOADER__.register(processDecelerationRate,'processDecelerationRate','/home/phz/workspace/brimitives/storybooks/native/node_modules/react-native/Libraries/Components/ScrollView/processDecelerationRate.js');}();;

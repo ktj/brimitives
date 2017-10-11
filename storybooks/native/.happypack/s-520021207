@@ -1,0 +1,51 @@
+
+
+
+
+
+
+
+
+
+
+
+'use strict';
+
+var keyMirror=require('fbjs/lib/keyMirror');
+
+
+
+
+
+var ImageResizeMode=keyMirror({
+
+
+
+
+contain:null,
+
+
+
+
+cover:null,
+
+
+
+
+
+stretch:null,
+
+
+
+
+
+center:null,
+
+
+
+
+
+repeat:null});
+
+
+module.exports=ImageResizeMode;;var _temp=function(){if(typeof __REACT_HOT_LOADER__==='undefined'){return;}__REACT_HOT_LOADER__.register(ImageResizeMode,'ImageResizeMode','/home/phz/workspace/brimitives/storybooks/native/node_modules/react-native/Libraries/Image/ImageResizeMode.js');}();;

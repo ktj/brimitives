@@ -1,0 +1,37 @@
+
+
+
+
+
+
+
+
+
+
+
+'use strict';
+
+
+
+
+
+
+
+
+
+
+
+
+
+var JSInspector={
+registerAgent:function registerAgent(type){
+if(global.__registerInspectorAgent){
+global.__registerInspectorAgent(type);
+}
+},
+getTimestamp:function getTimestamp(){
+return global.__inspectorTimestamp();
+}};
+
+
+module.exports=JSInspector;;var _temp=function(){if(typeof __REACT_HOT_LOADER__==='undefined'){return;}__REACT_HOT_LOADER__.register(JSInspector,'JSInspector','/home/phz/workspace/brimitives/storybooks/native/node_modules/react-native/Libraries/JSInspector/JSInspector.js');}();;

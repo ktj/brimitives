@@ -1,0 +1,19 @@
+
+
+
+
+
+
+function loadStories(){
+require('../stories/Main.stories.js');
+
+}
+
+var stories=[
+'../stories/Main.stories.js'];
+
+
+
+module.exports={
+loadStories:loadStories,
+stories:stories};;var _temp=function(){if(typeof __REACT_HOT_LOADER__==='undefined'){return;}__REACT_HOT_LOADER__.register(loadStories,'loadStories','/home/phz/workspace/brimitives/storybooks/native/storybook/storyLoader.js');__REACT_HOT_LOADER__.register(stories,'stories','/home/phz/workspace/brimitives/storybooks/native/storybook/storyLoader.js');}();;

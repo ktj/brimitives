@@ -1,7 +1,4 @@
 {
-  "expo": {
-    "sdkVersion": "21.0.0"
-  },
-  "name": "native",
-  "displayName": "native"
+  "name": "nativestorybook",
+  "displayName": "Storybook"
 }

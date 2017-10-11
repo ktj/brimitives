@@ -1,0 +1,16 @@
+
+
+
+
+
+
+
+
+
+
+
+'use strict';
+
+var NativeEventEmitter=require('NativeEventEmitter');
+
+module.exports=new NativeEventEmitter('StatusBarManager');;var _temp=function(){if(typeof __REACT_HOT_LOADER__==='undefined'){return;}}();;

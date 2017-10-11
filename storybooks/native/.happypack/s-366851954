@@ -1,0 +1,30 @@
+
+
+
+
+
+
+
+
+
+
+
+
+'use strict';
+
+var MessageQueue=require('MessageQueue');
+
+var BatchedBridge=new MessageQueue();
+
+
+
+
+
+
+
+Object.defineProperty(global,'__fbBatchedBridge',{
+configurable:true,
+value:BatchedBridge});
+
+
+module.exports=BatchedBridge;;var _temp=function(){if(typeof __REACT_HOT_LOADER__==='undefined'){return;}__REACT_HOT_LOADER__.register(BatchedBridge,'BatchedBridge','/home/phz/workspace/brimitives/storybooks/native/node_modules/react-native/Libraries/BatchedBridge/BatchedBridge.js');}();;

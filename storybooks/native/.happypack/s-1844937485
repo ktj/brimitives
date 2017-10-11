@@ -1,0 +1,166 @@
+
+
+
+
+
+
+
+
+
+
+
+
+'use strict';
+
+var PropTypes=require('prop-types');
+var UIManager=require('UIManager');
+
+var keyMirror=require('fbjs/lib/keyMirror');var
+
+checkPropTypes=PropTypes.checkPropTypes;
+
+var TypesEnum={
+spring:true,
+linear:true,
+easeInEaseOut:true,
+easeIn:true,
+easeOut:true,
+keyboard:true};
+
+var Types=keyMirror(TypesEnum);
+
+var PropertiesEnum={
+opacity:true,
+scaleXY:true};
+
+var Properties=keyMirror(PropertiesEnum);
+
+var animType=PropTypes.shape({
+duration:PropTypes.number,
+delay:PropTypes.number,
+springDamping:PropTypes.number,
+initialVelocity:PropTypes.number,
+type:PropTypes.oneOf(Object.keys(Types)).isRequired,
+property:PropTypes.oneOf(
+
+Object.keys(Properties))});
+
+
+
+
+
+
+
+
+
+
+
+
+var configType=PropTypes.shape({
+duration:PropTypes.number.isRequired,
+create:animType,
+update:animType,
+delete:animType});
+
+
+
+
+
+
+
+
+
+function checkConfig(config,location,name){
+checkPropTypes({config:configType},{config:config},location,name);
+}
+
+function configureNext(config,onAnimationDidEnd){
+if(__DEV__){
+checkConfig(config,'config','LayoutAnimation.configureNext');
+}
+UIManager.configureNextLayoutAnimation(
+config,
+onAnimationDidEnd||function(){},
+function(){
+
+});
+
+}
+
+function create(duration,type,creationProp){
+return{
+duration:duration,
+create:{
+type:type,
+property:creationProp},
+
+update:{
+type:type},
+
+delete:{
+type:type,
+property:creationProp}};
+
+
+}
+
+var Presets={
+easeInEaseOut:create(300,Types.easeInEaseOut,Properties.opacity),
+linear:create(500,Types.linear,Properties.opacity),
+spring:{
+duration:700,
+create:{
+type:Types.linear,
+property:Properties.opacity},
+
+update:{
+type:Types.spring,
+springDamping:0.4},
+
+delete:{
+type:Types.linear,
+property:Properties.opacity}}};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var LayoutAnimation={
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+configureNext:configureNext,
+
+
+
+create:create,
+Types:Types,
+Properties:Properties,
+checkConfig:checkConfig,
+Presets:Presets,
+easeInEaseOut:configureNext.bind(null,Presets.easeInEaseOut),
+linear:configureNext.bind(null,Presets.linear),
+spring:configureNext.bind(null,Presets.spring)};
+
+
+module.exports=LayoutAnimation;;var _temp=function(){if(typeof __REACT_HOT_LOADER__==='undefined'){return;}__REACT_HOT_LOADER__.register(checkPropTypes,'checkPropTypes','/home/phz/workspace/brimitives/storybooks/native/node_modules/react-native/Libraries/LayoutAnimation/LayoutAnimation.js');__REACT_HOT_LOADER__.register(TypesEnum,'TypesEnum','/home/phz/workspace/brimitives/storybooks/native/node_modules/react-native/Libraries/LayoutAnimation/LayoutAnimation.js');__REACT_HOT_LOADER__.register(Types,'Types','/home/phz/workspace/brimitives/storybooks/native/node_modules/react-native/Libraries/LayoutAnimation/LayoutAnimation.js');__REACT_HOT_LOADER__.register(PropertiesEnum,'PropertiesEnum','/home/phz/workspace/brimitives/storybooks/native/node_modules/react-native/Libraries/LayoutAnimation/LayoutAnimation.js');__REACT_HOT_LOADER__.register(Properties,'Properties','/home/phz/workspace/brimitives/storybooks/native/node_modules/react-native/Libraries/LayoutAnimation/LayoutAnimation.js');__REACT_HOT_LOADER__.register(animType,'animType','/home/phz/workspace/brimitives/storybooks/native/node_modules/react-native/Libraries/LayoutAnimation/LayoutAnimation.js');__REACT_HOT_LOADER__.register(configType,'configType','/home/phz/workspace/brimitives/storybooks/native/node_modules/react-native/Libraries/LayoutAnimation/LayoutAnimation.js');__REACT_HOT_LOADER__.register(checkConfig,'checkConfig','/home/phz/workspace/brimitives/storybooks/native/node_modules/react-native/Libraries/LayoutAnimation/LayoutAnimation.js');__REACT_HOT_LOADER__.register(configureNext,'configureNext','/home/phz/workspace/brimitives/storybooks/native/node_modules/react-native/Libraries/LayoutAnimation/LayoutAnimation.js');__REACT_HOT_LOADER__.register(create,'create','/home/phz/workspace/brimitives/storybooks/native/node_modules/react-native/Libraries/LayoutAnimation/LayoutAnimation.js');__REACT_HOT_LOADER__.register(Presets,'Presets','/home/phz/workspace/brimitives/storybooks/native/node_modules/react-native/Libraries/LayoutAnimation/LayoutAnimation.js');__REACT_HOT_LOADER__.register(LayoutAnimation,'LayoutAnimation','/home/phz/workspace/brimitives/storybooks/native/node_modules/react-native/Libraries/LayoutAnimation/LayoutAnimation.js');}();;

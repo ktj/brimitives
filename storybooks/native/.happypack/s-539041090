@@ -1,0 +1,21 @@
+
+
+
+
+
+
+
+
+
+
+
+
+'use strict';
+
+var TextInputState=require('TextInputState');
+
+function dismissKeyboard(){
+TextInputState.blurTextInput(TextInputState.currentlyFocusedField());
+}
+
+module.exports=dismissKeyboard;;var _temp=function(){if(typeof __REACT_HOT_LOADER__==='undefined'){return;}__REACT_HOT_LOADER__.register(dismissKeyboard,'dismissKeyboard','/home/phz/workspace/brimitives/storybooks/native/node_modules/react-native/Libraries/Utilities/dismissKeyboard.js');}();;

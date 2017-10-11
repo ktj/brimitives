@@ -1,0 +1,23 @@
+
+
+
+
+
+
+
+
+
+
+
+
+'use strict';
+
+var warning=require('fbjs/lib/warning');
+
+var VibrationIOS={
+vibrate:function vibrate(){
+warning('VibrationIOS is not supported on this platform!');
+}};
+
+
+module.exports=VibrationIOS;;var _temp=function(){if(typeof __REACT_HOT_LOADER__==='undefined'){return;}__REACT_HOT_LOADER__.register(VibrationIOS,'VibrationIOS','/home/phz/workspace/brimitives/storybooks/native/node_modules/react-native/Libraries/Vibration/VibrationIOS.android.js');}();;

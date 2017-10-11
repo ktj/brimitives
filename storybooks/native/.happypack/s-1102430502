@@ -1,0 +1,64 @@
+
+
+
+
+
+
+
+
+
+
+
+'use strict';
+
+
+
+
+
+
+
+
+
+
+
+var Subscribable={};
+
+Subscribable.Mixin={
+
+componentWillMount:function componentWillMount(){
+this._subscribableSubscriptions=[];
+},
+
+componentWillUnmount:function componentWillUnmount(){
+this._subscribableSubscriptions.forEach(
+function(subscription){return subscription.remove();});
+
+this._subscribableSubscriptions=null;
+},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+addListenerOn:function addListenerOn(
+eventEmitter,
+eventType,
+listener,
+context)
+{
+this._subscribableSubscriptions.push(
+eventEmitter.addListener(eventType,listener,context));
+
+}};
+
+
+module.exports=Subscribable;;var _temp=function(){if(typeof __REACT_HOT_LOADER__==='undefined'){return;}__REACT_HOT_LOADER__.register(Subscribable,'Subscribable','/home/phz/workspace/brimitives/storybooks/native/node_modules/react-native/Libraries/Components/Subscribable.js');}();;

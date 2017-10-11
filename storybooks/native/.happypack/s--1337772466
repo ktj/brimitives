@@ -1,0 +1,23 @@
+'use strict';
+
+Object.defineProperty(exports,"__esModule",{
+value:true});
+
+
+var _templateObject=_taggedTemplateLiteral(['\n  color: #313131;\n'],['\n  color: #313131;\n']);
+
+var _react=require('react');
+
+var _react2=_interopRequireDefault(_react);
+
+var _styledBrimitives=require('styled-brimitives');
+
+var _styledBrimitives2=_interopRequireDefault(_styledBrimitives);
+
+function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+function _taggedTemplateLiteral(strings,raw){return Object.freeze(Object.defineProperties(strings,{raw:{value:Object.freeze(raw)}}));}
+
+var Text=_styledBrimitives2.default.Text(_templateObject);
+
+exports.default=Text;;var _temp=function(){if(typeof __REACT_HOT_LOADER__==='undefined'){return;}__REACT_HOT_LOADER__.register(_templateObject,'_templateObject','/home/phz/workspace/brimitives/packages/ktj-component-lib/lib/Text/Text.js');__REACT_HOT_LOADER__.register(_react2,'_react2','/home/phz/workspace/brimitives/packages/ktj-component-lib/lib/Text/Text.js');__REACT_HOT_LOADER__.register(_styledBrimitives2,'_styledBrimitives2','/home/phz/workspace/brimitives/packages/ktj-component-lib/lib/Text/Text.js');__REACT_HOT_LOADER__.register(_interopRequireDefault,'_interopRequireDefault','/home/phz/workspace/brimitives/packages/ktj-component-lib/lib/Text/Text.js');__REACT_HOT_LOADER__.register(_taggedTemplateLiteral,'_taggedTemplateLiteral','/home/phz/workspace/brimitives/packages/ktj-component-lib/lib/Text/Text.js');__REACT_HOT_LOADER__.register(Text,'Text','/home/phz/workspace/brimitives/packages/ktj-component-lib/lib/Text/Text.js');}();;

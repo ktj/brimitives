@@ -1,5 +1,5 @@
 {
-  "name": "native",
+  "name": "nativestorybook",
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
@@ -9,21 +9,25 @@
     "babel-preset-react-native-stage-0": "^1.0.1",
     "jest-expo": "^21.0.2",
     "prop-types": "^15.6.0",
+    "react-brimitives": "^0.4.5",
     "react-dom": "^16.0.0",
-    "react-test-renderer": "^16.0.0"
+    "react-test-renderer": "^16.0.0",
+    "ktj-component-lib": "0.0.1"
   },
   "scripts": {
     "start": "react-native start",
     "android": "react-native run-android",
+    "android-ports": "adb reverse tcp:8081 tcp:8081 && adb reverse tcp:9001 tcp:9001 && adb reverse tcp:7007 tcp:7007 && react-native run-android",
     "ios": "react-native run-ios",
     "test": "node node_modules/jest/bin/jest.js --watch",
-    "storybook": "storybook start -p 7007",
+    "storybook": "storybook start -p 7007 --haul webpack.haul.storybook.js",
     "prestorybook": "rnstl"
   },
   "jest": {
     "preset": "jest-expo"
   },
   "dependencies": {
+    "haul": "^1.0.0-beta.6",
     "react": "^16.0.0",
     "react-native": "^0.48.4",
     "react-native-storybook-loader": "^1.6.0"

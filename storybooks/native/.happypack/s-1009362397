@@ -1,0 +1,27 @@
+
+
+
+
+
+
+
+
+
+
+
+'use strict';
+
+var warning=require('fbjs/lib/warning');
+
+var ToastAndroid={
+
+show:function show(
+message,
+duration)
+{
+warning(false,'ToastAndroid is not supported on this platform.');
+}};
+
+
+
+module.exports=ToastAndroid;;var _temp=function(){if(typeof __REACT_HOT_LOADER__==='undefined'){return;}__REACT_HOT_LOADER__.register(ToastAndroid,'ToastAndroid','/home/phz/workspace/brimitives/storybooks/native/node_modules/react-native/Libraries/Components/ToastAndroid/ToastAndroid.ios.js');}();;

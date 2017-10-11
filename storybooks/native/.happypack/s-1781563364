@@ -1,0 +1,42 @@
+
+
+
+
+
+
+
+
+
+
+
+'use strict';
+
+var Clipboard=require('NativeModules').Clipboard;
+
+
+
+
+module.exports={
+
+
+
+
+
+
+
+
+getString:function getString(){
+return Clipboard.getString();
+},
+
+
+
+
+
+
+
+
+
+setString:function setString(content){
+Clipboard.setString(content);
+}};;var _temp=function(){if(typeof __REACT_HOT_LOADER__==='undefined'){return;}__REACT_HOT_LOADER__.register(Clipboard,'Clipboard','/home/phz/workspace/brimitives/storybooks/native/node_modules/react-native/Libraries/Components/Clipboard/Clipboard.js');}();;

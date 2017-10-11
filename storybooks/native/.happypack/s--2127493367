@@ -1,0 +1,11 @@
+'use strict';
+
+Object.defineProperty(exports,"__esModule",{
+value:true});
+
+var Theme={
+primary:'#007ac9',
+secondary:'#4ea700'};
+
+
+exports.default=Theme;;var _temp=function(){if(typeof __REACT_HOT_LOADER__==='undefined'){return;}__REACT_HOT_LOADER__.register(Theme,'Theme','/home/phz/workspace/brimitives/packages/ktj-component-lib/lib/Theme/Theme.js');}();;

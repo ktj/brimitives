@@ -1,5 +1,3 @@
-import styled from 'styled-components/native';
-
-const ScrollView = styled.ScrollView``;
+import { ScrollView } from 'react-native';
 
 export default ScrollView;
